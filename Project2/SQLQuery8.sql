@@ -148,7 +148,7 @@ GO
 --------------------------------------------------------------------------------
 PRINT 'Populating dim_date for 2018-01-01 through 2026-12-31 using set-based approach';
 
--- Set-based date population (much faster than WHILE loop)
+ 
 INSERT INTO dbo.dim_date (DateKey, [Date], YearInt, MonthInt, MonthName, QuarterInt, IsWeekend)
 SELECT 
     DateKey = CONVERT(INT, CONVERT(VARCHAR(8), d.[Date], 112)),
@@ -421,11 +421,11 @@ BEGIN CATCH
     PRINT 'ETL failed with error:';
     PRINT @err;
 
-    -- Re-throw the error to surface it to the calling application
     THROW; 
 END CATCH;
 GO
 
 PRINT 'Data warehouse setup and ETL process complete'
+
 
 
