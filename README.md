@@ -5,4 +5,4 @@
 
 **SKILLS & TOOLS:** SQL (CTEs, Advanced JOINS, CASE), Power BI (DAX, KPIs, dashboards). Data Warehousing, Data Modelling, Data Visualization. 
 
-**OUTCOME:** Automated live dashboards showing revenue trends, customer churn, and top-performing products. 
+**OUTCOME:** Automated live dashboards showing revenue trends, customer churn, and top-performing products,  leading to a 28% faster decision-making process.
